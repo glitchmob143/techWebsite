@@ -294,4 +294,9 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+  /**
+   * Initiate Pure Counter 
+   */
+  new PureCounter();
+
 });
