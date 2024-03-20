@@ -560,6 +560,79 @@ section {
 /*--------------------------------------------------------------
 # Animated Hero Section
 --------------------------------------------------------------*/
+/* Tutorial on https://fossheim.io/writing/posts/css-text-gradient. */
+
+#hero:hover .gradient-text{
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: #df1529;
+  
+  /* Create the gradient. */
+   background-image: linear-gradient(
+        45deg,
+        #df1529 16.666%, 
+        #d86064 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #f3a469 50%, 
+        #e0f2f9 66.666%, 
+        #e0f2f9 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+
+
+}
+
+.gradient-text:hover{
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -577,6 +650,7 @@ section {
 }
 
 #hero span {
+  font-weight: 900;
   color: var(--color-primary);
 }
 
@@ -1395,7 +1469,7 @@ section {
 } */
 
 .counts {
-  background: #f1f7fd;
+  background: #e0f2f9;
   padding: 70px 0 60px;
 }
 
@@ -1461,6 +1535,7 @@ section {
 .why-us .content .more-btn {
   display: inline-block;
   background: rgba(255, 255, 255, 0.1);
+  /* border: 1px solid rgba(var(--color-gray-rgb), 0.15); */
   padding: 6px 30px 8px 30px;
   color: #fff;
   border-radius: 50px;
@@ -1472,7 +1547,7 @@ section {
 }
 
 .why-us .content .more-btn:hover {
-  color: #009970;
+  color: rgba(var(--color-primary-dark-rgb), 0.9);
   background: #fff;
 }
 
@@ -1783,7 +1858,7 @@ section {
 # Features
 --------------------------------------------------------------*/
 .features{
-  background: #f1f7fd;
+  background: #e0f2f9
 }
 .features .nav-tabs {
   border: 0;
@@ -1796,19 +1871,23 @@ section {
   padding: 20px;
   transition: 0.3s;
   color: #21413c;
-  border: 2px solid var(--color-secondary-light);
+  /* border: 2px solid var(--color-secondary-light); */
   border-radius: 10px;
+  background-color: white;
 }
 
 
 .features .nav-link:hover {
-  color: var(--color-primary);
   border-color: var(--color-primary-light);
 }
 
 .features .nav-link h4 {
   font-size: 18px;
   font-weight: 600;
+}
+
+.features .nav-link:hover h4 {
+  color: var(--color-primary);
 }
 
 .features .nav-link p {
