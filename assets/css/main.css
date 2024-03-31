@@ -1605,12 +1605,13 @@ section {
 --------------------------------------------------------------*/
 .cta {
   padding: 0;
-  margin-bottom: 60px;
+  margin-top: 100px;
+  /* margin-bottom: 60px; */
 }
 
 .cta .container {
   padding: 80px;
-  background: rgba(var(--color-secondary-rgb), 0.1);
+  /* background: rgba(var(--color-secondary-rgb), 0.1); */
   border-radius: 15px;
 }
 
@@ -2805,7 +2806,6 @@ section {
 --------------------------------------------------------------*/
 .blog .posts-list article {
   box-shadow: 0 4px 16px rgba(var(--color-black-rgb), 0.1);
-  padding: 30px;
   height: 100%;
 }
 
@@ -2889,17 +2889,27 @@ section {
 # Blog Details Page
 --------------------------------------------------------------*/
 
+.alternate {
+  padding: 80px;
+  background-color: rgba(var(--color-secondary-rgb), 0.1);
+  /* background-color: grey; */
+  /* border-radius: 15px; */
+}
+
 .blog{
   margin-top: 20px;
 }
 .blog .blog-details {
   box-shadow: 0 4px 16px rgba(var(--color-black-rgb), 0.1);
-  padding: 30px;
 }
 
 .blog .blog-details .post-img {
   margin: -30px -30px 20px -30px;
   overflow: hidden;
+}
+
+.blog .blog-details .img-fluid {
+  margin: 30px 30px 20px 90px;
 }
 
 .blog .blog-details .title {
@@ -2912,7 +2922,14 @@ section {
 
 .blog .blog-details .content {
   margin-top: 20px;
+  padding: 30px;
 }
+
+.blog .blog-details .content h1 {
+  font-size: 90px;
+  font-weight: 1000;
+}
+
 
 .blog .blog-details .content h3 {
   font-size: 22px;
