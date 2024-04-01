@@ -1882,10 +1882,20 @@ section {
   border-color: var(--color-primary-light);
 }
 
+.arrow-image {
+  position: relative;
+  left: 95%; /* This positions the left edge of the image 50% from the left of its container */
+}
+
 .features .nav-link h4 {
   font-size: 18px;
   font-weight: 600;
 }
+
+.features .nav-link:hover .arrow-image{
+  color: var(--color-primary);
+}
+
 
 .features .nav-link:hover h4 {
   color: var(--color-primary);
@@ -3531,14 +3541,14 @@ section {
   background: var(--color-secondary-dark);
 }
 
-.footer .footer-legal .credits {
+/* .footer .footer-legal .credits {
   padding-top: 4px;
   font-size: 13px;
   color: var(--color-white);
-}
+}*/
 
 .footer .footer-legal .credits a {
-  color: var(--color-primary-light);
+  color:var(--color-secondary-dark)
 }
 
 .footer .footer-legal .social-links a {

@@ -20,6 +20,9 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Vendor CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -73,7 +76,7 @@
           <img src="./assets/img/s.png" alt="" />
         </a>
 
-        <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar justify-content-between">
           <ul>
             <li class="nav-link">
               <a href="#"
@@ -88,15 +91,6 @@
                 >Services</a
               >
             </li>
-            <li>
-              <a class="nav-link scrollto" href="index.html#portfolio"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="index.html#team">Team</a>
-            </li>
-            <li><a href="blog.html">Blog</a></li>
             <!-- <li class="dropdown">
               <a href="#"
                 ><span>Drop Down</span>
@@ -130,9 +124,9 @@
         </nav>
         <!-- .navbar -->
 
-        <a class="btn-getstarted scrollto" href="index.html#about"
+        <!-- <a class="btn-getstarted scrollto" href="index.html#about"
           >Get Started</a
-        >
+        > -->
       </div>
     </header>
     <!-- End Header -->
@@ -583,7 +577,7 @@
                   Identity Governance, Testing Services, Mobile Dev & Testing, Staff Augmentation and Staffing Services to our customers.
                 </p>
                 <div class="text-center">
-                  <a href="#" class="more-btn"
+                  <a href="#features" class="more-btn"
                     >Learn More <i class="bx bx-chevron-right"></i
                   ></a>
                 </div>
@@ -647,7 +641,7 @@
             <h2>Our Services</h2>
           </div>
           <div class="row">
-            <div class="col-lg-4 ml-auto" data-aos="fade-left">
+            <div class="col-lg-4 ml-auto" data-aos="fade-right">
               <div class="tab-content">
                 <div class="tab-pane active show" id="tab-1">
                   <figure>
@@ -706,7 +700,7 @@
               </div>
             </div>
 
-            <div class="col-lg-8 mb-5 mb-lg-0" data-aos="fade-right">
+            <div class="col-lg-8 mb-5 mb-lg-0" data-aos="fade-left">
               <ul class="nav nav-tabs flex-column">
                 <div class="row">
                   <div class="col-lg-6">
@@ -718,27 +712,26 @@
                         onClick = "onClick(event)"
                         href="technology-staffing.html"
                       >
-                        <h4>Technology Staffing</h4>
+                        <h4 style="position: absolute;">Technology Staffing </h4><i class=" fa fa-solid fa-arrow-right fa-sm arrow-image"></i>
                         <!-- <a href = "blog-details.html">Read More</a> -->
                         <p>
-                          At ABS Tech, we provide a wide range of solutions that help our clients reduce turnover, limit liability and solve problems — all while improving their bottom line.
+                          Wide range of solutions that help our clients reduce turnover, limit liability and solve problems
                         </p>
                         <!-- <p><a href = "blog-details.html">Read More</a></p> -->
                       </a>
                     </li>
                     <li class="nav-item mt-2">
                       <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2"  onClick = "onClick(event)" href="dev-ops.html">
-                        <h4>Mobile Apps Development</h4>
-                        <p>Our artistic team develops mobile apps using the perfect fit technology as per the project requirement and current market trends. It gives you an edge 
-                          to be on the top among your end customers, building their trust and gratification. We use smart mobile strategies.</p>
+                        <h4 style="position: absolute;">Mobile Apps Development</h4><i class=" fa fa-solid fa-arrow-right fa-sm arrow-image"></i>
+                        <p>Our team develops mobile apps which gives you an edge, building customer trust and gratification.</p>
                       </a>
                     </li>
                     <li class="nav-item mt-2">
                       <a class="nav-link" data-bs-toggle="tab"  data-bs-target="#tab-3"  onClick = "onClick(event)" href="oracle-applications.html">
-                        <h4>Oracle Applications
-                        </h4>
+                        <h4 style="position: absolute;">Oracle Applications
+                        </h4><i class=" fa fa-solid fa-arrow-right fa-sm arrow-image"></i>
                         <p>
-                          Especially we build professional Oracle apps for Enterprise, E-Commerce, Utility and Educational applications.
+                          Professional Oracle apps for Enterprise, E-Commerce, Utility and Educational applications.
                         </p>
                       </a>
                     </li>
@@ -746,26 +739,24 @@
                   <div class="col-lg-6">
                     <li class="nav-item mt-2">
                       <a class="nav-link" data-bs-toggle="tab"  data-bs-target="#tab-4"  onClick = "onClick(event)" href="data-ai.html">
-                        <h4>Data-AI</h4>
+                        <h4 style="position: absolute;">Data-AI</h4><i class=" fa fa-solid fa-arrow-right fa-sm arrow-image"></i>
                         <p>
-                          We believe in creating interactive E – commerce websites, which engages customers with retailers in many ways.
+                          We believe in creating interactive E – commerce websites, which engages customers with retailers.
                         </p>
                       </a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" data-bs-toggle="tab"  data-bs-target="#tab-5"  onClick = "onClick(event)" href="it-consulting.html">
-                        <h4>IT Consulting</h4>
+                        <h4 style="position: absolute;">IT Consulting</h4><i class=" fa fa-solid fa-arrow-right fa-sm arrow-image"></i>
                         <p>
-                          Information Technology Consulting called IT consulting, computer consultancy, business and technology services, computing consultancy, 
-                          technology consulting, and IT advisory.
+                          IT consulting, business and technology services, computing consultancy and IT advisory.
                         </p>
                       </a>
                     </li>
                     <li class="nav-item mt-2">
                       <a class="nav-link" data-bs-toggle="tab"  data-bs-target="#tab-6"  onClick = "onClick(event)" href="it-training.html">
-                        <h4>IT- Training</h4>
-                        <p>ABS Tech will offer individual and corporate training in various technologies as well as technology functions through our Training team. Our courses are very comprehensive and job-oriented and provide 
-                          in-depth real-life scenarios and examples. Courses are delivered by various methods – online, self-driven online, classroom and on-site at client locations.</p>
+                        <h4 style="position: absolute;">IT- Training</h4><i class=" fa fa-solid fa-arrow-right fa-sm arrow-image"></i>
+                        <p>Individual and corporate training through our in-depth real-life scenarios and examples. </p>
                       </a>
                     </li>
                   </div>
@@ -1798,16 +1789,12 @@
         <div class="container">
           <div class="section-header">
             <h2>Contact Us</h2>
-            <p>
-              Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam
-              occaecati dssumenda quas ut ad dolores adipisci aliquam.
-            </p>
           </div>
         </div>
 
         <div class="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+            src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=23616%20Richland%20Grove%20Drive%20Ashburn,%20VA%2020148+(Abs%20Technologies)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
             frameborder="0"
             allowfullscreen
           ></iframe>
@@ -1820,8 +1807,7 @@
               <div class="info">
                 <h3>Get in touch</h3>
                 <p>
-                  Et id eius voluptates atque nihil voluptatem enim in tempore
-                  minima sit ad mollitia commodi minus.
+                  Let us help accelerate your business development and deployment process.
                 </p>
 
                 <div class="info-item d-flex">
@@ -1921,12 +1907,12 @@
           <div class="row">
             <div class="col-lg-3 col-md-6">
               <div class="footer-info">
-                <h3>HeroBiz</h3>
+                <h3>ABSTECH</h3>
                 <p>
-                  A108 Adam Street <br />
-                  NY 535022, USA<br /><br />
-                  <strong>Phone:</strong> +1 5589 55488 55<br />
-                  <strong>Email:</strong> info@example.com<br />
+                  13800 Coppermine Road, Suite <br />
+                  126 Herndon, Virginia 20171<br /><br />
+                  <strong>Phone:</strong> +1 571-283-8926<br />
+                  <strong>Email:</strong> hr@abstechus.com<br />
                 </p>
               </div>
             </div>
@@ -1938,10 +1924,10 @@
                   <i class="bi bi-chevron-right"></i> <a href="#">Home</a>
                 </li>
                 <li>
-                  <i class="bi bi-chevron-right"></i> <a href="#">About us</a>
+                  <i class="bi bi-chevron-right"></i> <a href="#about">About us</a>
                 </li>
                 <li>
-                  <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
+                  <i class="bi bi-chevron-right"></i> <a href="#features">Services</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>
@@ -1958,32 +1944,28 @@
               <h4>Our Services</h4>
               <ul>
                 <li>
-                  <i class="bi bi-chevron-right"></i> <a href="#">Web Design</a>
+                  <i class="bi bi-chevron-right"></i> <a href="./technology-staffing.html">Technology Staffing</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>
-                  <a href="#">Web Development</a>
+                  <a href="./oracle-applications.html">Oracle Applications</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="./data-ai.html">Data-AI</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>
-                  <a href="#">Product Management</a>
-                </li>
-                <li>
-                  <i class="bi bi-chevron-right"></i> <a href="#">Marketing</a>
+                  <a href="./it-consulting.html">IT Consulting</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>
-                  <a href="#">Graphic Design</a>
+                  <a href="./it-training.html">IT Training</a>
                 </li>
               </ul>
             </div>
 
             <div class="col-lg-4 col-md-6 footer-newsletter">
               <h4>Our Newsletter</h4>
-              <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
-              </p>
               <form action="" method="post">
                 <input type="email" name="email" /><input
                   type="submit"
@@ -2003,10 +1985,10 @@
             class="d-flex flex-column align-items-center align-items-lg-start"
           >
             <div class="copyright">
-              &copy; Copyright <strong><span>HeroBiz</span></strong
+              &copy; Copyright <strong><span>ABSTECH</span></strong
               >. All Rights Reserved
             </div>
-            <div class="credits">
+            <div class="credits" style="color:var(--color-secondary-dark)">
               <!-- All the links in the footer should remain intact. -->
               <!-- You can delete the links only if you purchased the pro version. -->
               <!-- Licensing information: https://bootstrapmade.com/license/ -->
