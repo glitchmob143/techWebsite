@@ -1362,26 +1362,26 @@ section {
 
 .about .about-img {
   position: relative;
-  margin: 60px 0 0 60px;
+  margin: 10px 0 0 10px;
 }
 
-.about .about-img:before {
+/* .about .about-img:before {
   position: absolute;
-  inset: -60px 0 0 -60px;
+  inset: -1px 0 0 100px;
   z-index: -1;
   content: "";
   background: url("../img/about-bg.png") top left;
   background-repeat: no-repeat;
-}
+} */
 
 @media (max-width: 575px) {
   .about .about-img {
     margin: 30px 0 0 30px;
   }
 
-  .about .about-img:before {
+  /* .about .about-img:before {
     inset: -30px 0 0 -30px;
-  }
+  } */
 }
 
 .about h3 {
@@ -3500,6 +3500,7 @@ section {
 .footer .footer-content .footer-links ul a {
   color: rgba(var(--color-white-rgb), 0.7);
   transition: 0.3s;
+  font-size: small;
   display: inline-block;
   line-height: 1;
 }
