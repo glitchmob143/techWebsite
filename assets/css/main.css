@@ -636,8 +636,9 @@ section {
 #hero {
   width: 100%;
   height: 100vh;
-  margin-top: 70px;
-  background: url("../img/hero-bg.png") center center;
+  /* margin-top: 70px; */
+  background: url("../img/pngwing.com\ \(2\).png") center center;
+  background-size: 1800px;
 }
 
 #hero h2 {
@@ -1918,6 +1919,10 @@ section {
 
 .features .tab-pane.active {
   animation: slide-down 0.5s ease-out;
+}
+
+.features img {
+  border-radius: 15px;
 }
 
 @keyframes slide-down {
