@@ -338,6 +338,15 @@ header .navbar {
 	font-family: 'FontAwesome';
 }
 
+.dropdown-item{
+	font-size: 13px;
+	line-height: 26px;
+	color: #6a6a6a;
+}
+
+.dropdown-item:hover{
+	color: #1D24CA;
+}
 
 
 /* Banner Style */
@@ -769,6 +778,7 @@ ul.slick-dots {
 
 .callback-form {
 	margin-top: 140px;
+	margin-bottom: 50px;
 }
 
 .callback-form .contact-form {
@@ -1382,6 +1392,14 @@ footer .contact-form button.filled-button:hover {
 	font-size: 34px;
 	margin-bottom: 30px;
 	/* color: #EBF400; */
+  }
+
+  .why-us  h4{
+	text-align: center;
+  }
+
+  .why-us p{
+	text-align: justify;
   }
 
   .why-us .content p{
