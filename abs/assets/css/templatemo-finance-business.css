@@ -399,7 +399,7 @@ header .navbar {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height:95vh;
+	height:100vh;
 }
 
 .Modern-Slider .item-1 .img-fill {
@@ -596,6 +596,7 @@ ul.slick-dots {
 
 .fun-facts {
 	margin-top: 140px;
+	margin-bottom: 140px;
 	background-image: url(../images/fun-facts-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -655,16 +656,37 @@ ul.slick-dots {
 }
 
 
-
-/* More Info */
-
-.more-info {
+@media screen and (max-width: 768px){
+.more-info{
 	margin-top: 140px;
 }
+}
 
+/* More Info */
+ @media screen and (min-width: 768px) {
+	.more-info{
+		margin-top: 140px;
+		position: relative;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.more-info .left-image img {
+		position: absolute;
+	  top: 50%;
+	  left: 47%;
+	  transform: translate(-50%, -50%);
+		width: 90%;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 767px){
 .more-info .left-image img {
+	margin-top: 140px;
 	width: 100%;
 	overflow: hidden;
+}
 }
 
 .more-info .more-info-content {
@@ -1077,7 +1099,7 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading {
 	text-align: center;
-	background-image: url(../images/page-heading-bg.jpg);
+	background-image: url(../images/fun-facts-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
