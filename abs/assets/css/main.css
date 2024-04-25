@@ -1,11 +1,4 @@
-/* 
 
-TemplateMo - Finance Business
-
-https://templatemo.com/tm-545-finance-business
-
-*/
-/* 1D24CA */
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -18,7 +11,6 @@ p {
 	margin-bottom: 0px;
 	font-size: 14px;
 	color: #666666;
-	/* line-height: 30px; */
 }
 
 a {
@@ -1429,14 +1421,10 @@ footer .contact-form button.filled-button:hover {
     text-align: justify;
   }
   
-  /* .why-us .content p {
-	margin-bottom: 30px;
-  } */
   
   .why-us .content .more-btn {
 	display: inline-block;
 	background: rgba(255, 255, 255, 0.1);
-	/* border: 1px solid rgba(var(--color-gray-rgb), 0.15); */
 	padding: 6px 30px 8px 10px;
 	color: #fff;
 	border-radius: 50px;

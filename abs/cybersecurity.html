@@ -16,15 +16,9 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-<!--
 
-ABS TECH TemplateMo
-
-https://templatemo.com/tm-545-finance-business
-
--->
   </head>
 
   <body>
@@ -130,10 +124,7 @@ https://templatemo.com/tm-545-finance-business
                     <span>Cybersecurity SERVICES</span>
                     <h2>Digital Risk <em>Protection Services</em></h2>
                     <p >Our Digital Risk Protection Services provide your organization with the ability to detect digital threats in real time. By conducting continuous surveillance of various online platforms—including websites, social media, both official and unofficial app stores, the deep and dark web, instant messaging systems, and open sources—we ensure rapid and efficient threat mitigation. This comprehensive monitoring allows your business to swiftly identify and address potential security risks, maintaining the integrity of your digital footprint.
-                    </p><!-- <br><br>Your site should function well and have minimal downtime. Partner with DataArt, a DevOps services company, to implement your Site Reliability Engineering (SRE) approach</p> -->
-                    <!-- <p><li>Service-level objectives (SLO) for business goals</li>
-                      <li>Service-level indicator (SLI) for success identifiers</li>
-                      <li>Service-level agreement (SLA) for commitment to achieving success.</li></p> -->
+                    </p>
                   </div>
                 </div>
               </div>
@@ -151,10 +142,7 @@ https://templatemo.com/tm-545-finance-business
                 <span>Cybersecurity Services</span>
                 <h2>Professional Security <em>Services</em></h2>
                 <p >Our Professional Security Services leverage deep insights into attacker tactics alongside cutting-edge threat intelligence to offer robust cybersecurity solutions. This strategic advantage enables us to not only prevent cybersecurity incidents but also to effectively assess, respond to, and remediate any threats to your systems.By staying ahead of the latest security trends and continuously evolving our strategies, we ensure comprehensive protection for your infrastructure.
-                </p><!-- <br><br>Your site should function well and have minimal downtime. Partner with DataArt, a DevOps services company, to implement your Site Reliability Engineering (SRE) approach</p> -->
-                <!-- <p><li>Service-level objectives (SLO) for business goals</li>
-                  <li>Service-level indicator (SLI) for success identifiers</li>
-                  <li>Service-level agreement (SLA) for commitment to achieving success.</li></p> -->
+                </p>
               </div>
             </div>
             <div class="col-md-6">
@@ -181,10 +169,7 @@ https://templatemo.com/tm-545-finance-business
                 <span>Cybersecurity Services</span>
                 <h2>Managed Detection and  <em>Response Services</em></h2>
                 <p >In today’s interconnected and high-risk digital landscape, our Managed Detection and Response Services provide 24/7 security coverage to keep your operations safe and resilient against cyber threats. We are relentless, just like the cyber attacks we defend against. Our services are designed to provide continuous, comprehensive monitoring and rapid response capabilities, ensuring that threats are identified and mitigated before they can impact your business.
-                </p><!-- <br><br>Your site should function well and have minimal downtime. Partner with DataArt, a DevOps services company, to implement your Site Reliability Engineering (SRE) approach</p> -->
-                <!-- <p><li>Service-level objectives (SLO) for business goals</li>
-                  <li>Service-level indicator (SLI) for success identifiers</li>
-                  <li>Service-level agreement (SLA) for commitment to achieving success.</li></p> -->
+                </p>
               </div>
             </div>
           </div>
@@ -215,6 +200,7 @@ https://templatemo.com/tm-545-finance-business
               <li><a href="./about.html">About Us</a></li>
               <li><a href="./index.html#services">Our Services</a></li>
               <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./terms.html">Terms & Conditions</a></li>              
             </ul>
           </div>
           <div class="col-md-3 footer-item">
@@ -223,7 +209,7 @@ https://templatemo.com/tm-545-finance-business
               <li><a href="./data_ai.html">Data & AI Services</a></li>
               <li><a href="./devops.html">DevOps Services</a></li>
               <li><a href="./oracle_applications.html">Oracle Applications</a></li>
-              <li><a href="./dynamic_crm_erp.html">Dynamic ERP & CRM</a></li>
+              <li><a href="./dynamic_crm_erp.html">Dynamic CRM & ERP</a></li>
               <li><a href="./it_training.html">IT Training & Consulting</a></li>
               <li><a href="./cybersecurity.html">Cybersecurity Services</a></li>
 
@@ -264,11 +250,11 @@ https://templatemo.com/tm-545-finance-business
     <script src="assets/js/accordions.js"></script>
 
     <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
+      cleared[0] = cleared[1] = cleared[2] = 0;
+      function clearField(t){                  
+      if(! cleared[t.id]){                   
+          cleared[t.id] = 1; 
+          t.value='';        
           t.style.color='#fff';
           }
       }
